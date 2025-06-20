@@ -1,1 +1,15 @@
 <h2>로그인 페이지</h2>
+<br>
+
+{% if user.is_authenticated %}
+로그인 성공!<br>
+{{ user.username }}님, 환영합니다!
+{% else %}
+<form method="POST">
+    {% csrf_token %}
+    <input name="username" type="text">
+    <input name="password" type="password">
+    <input value="로그인" type="submit">
+</form>
+{% endif %}
+

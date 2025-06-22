@@ -1,8 +1,10 @@
 <h1>최근 설문</h1>
-<ul>
+{% if latest_question_list %}
+  <ul>
   {% for question in latest_question_list %}
-    <li>{{ question.question_text }} ({{ question.pub_date }})</li>
-  {% empty %}
-    <li>설문이 없습니다.</li>
+    <li><a href={% url "detail" question.id %}>{{question.question_text}}</a></li>
   {% endfor %}
-</ul>
+  </ul>
+{% else %}
+  <p>No polls are available.</p>
+{% endif %}

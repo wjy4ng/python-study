@@ -1,0 +1,16 @@
+class App():
+    def __init__(self):
+        self.name = "양원준"
+        self.age = 24
+    
+    def print_test(self):
+        print("test입니다")
+
+    def introduction(self):
+        print(f"제 이름은 {self.name}이고, 나이는 {self.age}입니다.")
+
+
+if __name__=="__main__":
+    app = App()
+    app.print_test()
+    app.introduction()

@@ -2,7 +2,7 @@ class App():
     def __init__(self):
         self.name = "양원준"
         self.age = 24
-        self.job = "student_in_KNU"
+        self.job = "student_in_KNU대학이다"
     
     def print_test(self):
         print("test입니다")
@@ -18,4 +18,4 @@ if __name__=="__main__":
     app = App()
     app.print_test()
     app.introduction()
-    app.myjob()
+    app.myjob

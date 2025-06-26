@@ -1,21 +1,18 @@
 class App():
+    test_id = 1
+
     def __init__(self):
-        self.name = "양원준"
-        self.age = 24
-        self.job = "student_in_KNUniversity"
+        self.id = App.test_id
+        App.test_id += 1
     
     def print_test(self):
-        print("test입니다")
-
-    def introduction(self):
-        print(f"제 이름은 {self.name}이고, 나이는 {self.age}입니다.")
-
-    def myjob(self):
-        print(f"제 직업은 {self.job}입니까?")
+        print(f"test id : {self.id}")
 
 
 if __name__=="__main__":
-    app = App()
-    app.print_test()
-    app.introduction()
-    app.myjob()
+    app1 = App()
+    app2 = App()
+
+    app1.print_test()
+    app2.print_test()
+

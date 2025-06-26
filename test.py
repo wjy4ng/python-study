@@ -2,6 +2,7 @@ class App():
     def __init__(self):
         self.name = "양원준"
         self.age = 24
+        self.job = "student_in_KNU"
     
     def print_test(self):
         print("test입니다")
